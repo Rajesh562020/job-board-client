@@ -9,7 +9,7 @@ export default function JobDetails() {
   const [job, setJob] = useState(null);
 
   useEffect(() => {
-    axios.get(`${process.env.BASE_URL_PROD}api/jobs/${id}`)
+    axios.get(`${process.env.REACT_APP_BASE_URL_PROD}api/jobs/${id}`)
       .then(res => setJob(res.data));
   }, [id]);
 

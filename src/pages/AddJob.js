@@ -19,7 +19,7 @@ export default function AddJob() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post(`${process.env.BASE_URL_PROD}api/jobs`, form);
+    await axios.post(`${process.env.REACT_APP_BASE_URL_PROD}api/jobs`, form);
     navigate('/');
   };
 

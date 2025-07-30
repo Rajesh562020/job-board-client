@@ -6,7 +6,7 @@ export default function Home() {
     const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
-        axios.get(`${process.env.BASE_URL_PROD}api/jobs`)
+        axios.get(`${process.env.REACT_APP_BASE_URL_PROD}api/jobs`)
             .then((res) => setJobs(res.data));
     }, []);
 
