@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Job Board Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the **Job Board App**, built using **React.js**. It allows users to browse and post job listings through a user-friendly interface.
 
-## Available Scripts
+## 🌐 Live Demo
 
-In the project directory, you can run:
+[https://job-board-client-lovat.vercel.app/](https://job-board-client-lovat.vercel.app/)
+```markdown
 
-### `npm start`
+## 📂 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+client/
+├── public/
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Page-level components (Home, PostJob, etc.)
+│   ├── App.js            # Main component with routing
+│   ├── App.css           # Global styles
+│   └── index.js          # Entry point
+├── .env                  # Environment variables
+├── .gitignore
+├── package.json
+└── README.md
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Features
 
-### `npm run build`
+- View all job listings from backend
+- Post a new job through a form
+- Responsive UI
+- Axios integration with backend API
+- Environment-based API URL handling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js**
+- **Axios** for API calls
+- **React Router DOM** for routing
+- **CSS** for styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Environment Variables
 
-### `npm run eject`
+Create a `.env` file in the root of the client project with:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+REACT\_APP\_BASE\_URL\_PROD=[https://xyz.onrender.com/](https://xyz.onrender.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+````
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Setup Instructions
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/Rajesh562020/job-board-client
+cd job-board-client
+````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Create a `.env` file and add your backend URL:
 
-### Analyzing the Bundle Size
+```env
+REACT_APP_BASE_URL_PROD=https://xyz.onrender.com/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Run the development server:
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The app will run at `http://localhost:3000`.
 
-### Advanced Configuration
+## 🌐 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This client is deployed on **Vercel**. Push changes to your main branch, and Vercel will auto-deploy.
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed for educational and demo purposes.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+```
