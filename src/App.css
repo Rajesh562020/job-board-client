@@ -1,38 +1,150 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  color: #2c3e50;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.job-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.job-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.job-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.job-card p {
+  margin: 5px 0;
+}
+
+.job-card .job-type {
+  font-size: 0.9rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
   color: white;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.job-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex: 1 1 100%; /* default to full width on small screens */
+  max-width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h2 {
+  margin-bottom: 8px;
+}
+
+.add-job-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(30, 136, 229, 0.2);
+}
+
+.add-job-btn:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(21, 101, 192, 0.3);
+}
+
+@media (min-width: 768px) {
+  .job-card {
+    flex: 1 1 calc(45% - 20px); /* two cards per row with some spacing */
+    max-width: calc(45% - 20px);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1024px) {
+  .job-card {
+    flex: 1 1 calc(30% - 20px); /* three cards per row on larger screens */
+    max-width: calc(30% - 20px);
   }
 }
